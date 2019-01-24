@@ -8,5 +8,8 @@ class App < Sinatra::Base
   
   post '/display_puppy' do
     new_puppy = Puppy.new
+    @name = new_puppy.name
+    @breed = new_puppy.breed
+    @age = new_puppy.age
   end
 end
