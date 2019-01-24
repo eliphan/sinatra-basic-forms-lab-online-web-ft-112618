@@ -7,6 +7,6 @@ class App < Sinatra::Base
   end
   
   post '/display_puppy' do
-    @puppy = Puppy.new
+    new_puppy = Puppy.new
   end
 end
