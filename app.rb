@@ -6,7 +6,7 @@ class App < Sinatra::Base
     erb :index
   end
   
-  post '/display_puppy' do
+  post '/' do
     new_puppy = Puppy.new
     @name = new_puppy.name
     @breed = new_puppy.breed
